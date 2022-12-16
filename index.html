@@ -16,15 +16,15 @@
         </form>
         <p id="mynews"></p>
         <script>
+            let s = document.querySelector('input[name = "word"]');
             let mynews = document.getElementById("mynews");
-            mynews.innerHTML = "";
+
             function saveWord(e) {
                 e.preventDefault();
-                let s = document.querySelector('input[name = "word"]');
-                console.log(s.value);
-                // myul.innerHTML += '<li>'+fn.value+' '+sn.value+'</li>';
 
-                mynews.innerHTML += "<p>" + s.value + " " + s.value + "</p>";
+                console.log(s.value);
+
+                mynews.innerHTML += " " + s.value;
             }
         </script>
     </body>
